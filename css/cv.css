@@ -1,0 +1,206 @@
+:root {
+    --bleu: #FFD600;
+    --bleuFonce: #FDD835;
+    --paddingLeft: 1.5rem;
+    --paddingRight: 2rem;
+}
+
+body {
+  /* width: 100vw; */ /* Equivalent to 100% width of viewport */
+  /* height: 100vh; */ /* same with height */
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  font-size: 14px;
+}
+
+#conteneur{
+  padding: 0;
+  list-style-type: none;
+
+  }
+
+.photo {
+  background: var(--bleu);
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+}
+
+.titrecv {
+  background: #FFFFFF;
+  grid-column: 2;
+  grid-row: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: var(--paddingLeft);
+}
+
+.contact {
+  background: var(--bleu);
+  grid-column: 1;
+  grid-row: 2;
+
+}
+
+
+.parcours{
+  background: #FFFFFF;
+  grid-column: 2;
+  grid-row: 2;
+  padding-left: var(--paddingLeft);
+}
+
+.loisirs{
+  background: var(--bleu);
+  grid-column: 1;
+  grid-row: 3
+}
+
+.recommandations{
+
+  background: #FFFFFF;
+  grid-column: 2;
+  grid-row: 3;
+  padding-left: var(--paddingLeft);
+}
+
+
+
+.monprenom{
+  color: var(--bleu);
+  font-size: 30px;
+
+}
+
+
+
+
+img {
+    border-radius: 50%;
+    margin-top: 1rem;
+    width: 80%;
+    border: 2px solid var(--bleuFonce);
+    margin-bottom: .5rem;
+}
+aside h3 {
+    background-color: black;
+    color: var(--bleu);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+aside p {
+    padding-left: var(--paddingLeft);
+    padding-right: var(--paddingRight);
+}
+
+
+
+icones {
+    display: flex;
+    justify-content: space-around;
+}
+
+icones i {
+    border: 1px solid;
+    font-size: 1.5rem;
+    /* padding: .5rem; */
+    border-radius: 50%;
+    display: flex !important;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2:after {
+  content: " ";
+  display: block;
+  border-top: 2px solid var(--bleu);
+  width: 7rem;
+}
+
+#conteneur li:before {
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    margin-right: .5rem;
+    font-size: 10px;
+    margin-top:.3rem;
+    color:var(--bleu);
+    font-weight:900;
+}
+#conteneur li:first-of-type:before {
+    content: "\f192";
+    font-weight:initial;
+    }
+    
+@media screen AND (min-width:768px){
+  body {
+    display: grid;
+    grid-template-columns: 250px 550px;
+    grid-template-rows: auto 1fr auto;
+  }
+  #conteneur li{
+    display:flex;
+    justify-content:space-between;
+    margin: 1.5rem 0;
+  }
+
+  date{
+    width:200px;
+  }
+
+  done{
+    width: 528px;
+  }
+
+}
+
+date{
+  display:block;
+  text-align: justify;
+}
+
+done{
+  display:block;
+  padding-left: 2rem;
+}
+
+reco {
+    display: flex;
+    justify-content: space-between;
+}
+
+div h1 {
+    /* border-bottom: 2px solid var(--bleu); */
+    font-size:20px;
+}
+.contact p:last-of-type {
+    text-align: justify;
+    margin-left: 1.3rem;
+}
+.colored{
+  color: var(--bleu);
+  margin-right: 1rem;
+}
+aside ul {
+    list-style-type: none;
+}
+aside li {
+    margin-bottom: 10px;
+}
+
+h1{
+  text-transform:uppercase;
+}
+
+div h1:after {
+    content: " ";
+    display: block;
+    border-top: 2px solid var(--bleu);
+    margin-top: 10px;
+    font size: 10px;
+  
+}
