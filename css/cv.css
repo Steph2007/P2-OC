@@ -5,6 +5,8 @@
     --paddingRight: 2rem;
 }
 
+
+
 body {
   /* width: 100vw; */ /* Equivalent to 100% width of viewport */
   /* height: 100vh; */ /* same with height */
@@ -13,11 +15,44 @@ body {
   font-size: 14px;
 }
 
+
+
+@media screen AND (min-width:768px){
+  body {
+    display: grid;
+    grid-template-columns: 250px 550px;
+    grid-template-rows: auto 1fr auto;
+  }
+  #conteneur li{
+    display:flex;
+    justify-content:space-between;
+    margin: 1.5rem 0;
+  }
+}
+
+
+
 #conteneur{
   padding: 0;
   list-style-type: none;
+}
 
-  }
+#conteneur li:before {
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    margin-right: .5rem;
+    font-size: 10px;
+    margin-top:.3rem;
+    color:var(--bleu);
+    font-weight:900;
+}
+
+#conteneur li:first-of-type:before {
+    content: "\f192";
+    font-weight:initial;
+}
+
+
 
 .photo {
   background: var(--bleu);
@@ -41,7 +76,6 @@ body {
   background: var(--bleu);
   grid-column: 1;
   grid-row: 2;
-
 }
 
 
@@ -59,21 +93,48 @@ body {
 }
 
 .recommandations{
-
   background: #FFFFFF;
   grid-column: 2;
   grid-row: 3;
   padding-left: var(--paddingLeft);
 }
 
-
-
 .monprenom{
   color: var(--bleu);
   font-size: 30px;
-
 }
 
+.icones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.date{
+  display:block;
+  text-align: justify;
+  width: 200px;
+}
+
+.done{
+  display:block;
+  padding-left: 2rem;
+  width: 528px;
+}
+
+.reco {
+  display:flex;
+  justify-content:space-between
+}
+
+.contact p:last-of-type {
+    text-align: justify;
+    margin-left: 1.3rem;
+}
+
+.colored{
+  color: var(--bleu);
+  margin-right: 1rem;
+}
 
 
 
@@ -84,6 +145,7 @@ img {
     border: 2px solid var(--bleuFonce);
     margin-bottom: .5rem;
 }
+
 aside h3 {
     background-color: black;
     color: var(--bleu);
@@ -96,12 +158,6 @@ aside p {
     padding-right: var(--paddingRight);
 }
 
-
-
-.icones {
-    display: flex;
-    justify-content: space-around;
-}
 
 aside i {
     border: 1px solid;
@@ -122,68 +178,14 @@ header h2:after {
   width: 7rem;
 }
 
-#conteneur li:before {
-    content: "\f111";
-    font-family: "Font Awesome 5 Free";
-    margin-right: .5rem;
-    font-size: 10px;
-    margin-top:.3rem;
-    color:var(--bleu);
-    font-weight:900;
-}
-#conteneur li:first-of-type:before {
-    content: "\f192";
-    font-weight:initial;
-    }
-    
-@media screen AND (min-width:768px){
-  body {
-    display: grid;
-    grid-template-columns: 250px 550px;
-    grid-template-rows: auto 1fr auto;
-  }
-  #conteneur li{
-    display:flex;
-    justify-content:space-between;
-    margin: 1.5rem 0;
-  }
-
-
-
-}
-
-.date{
-  display:block;
-  text-align: justify;
-  width: 200px;
-}
-
-.done{
-  display:block;
-  padding-left: 2rem;
-  width: 528px;
-}
-
-
-.reco {
-  display:flex;
-  justify-content:space-between
-}
-
 div h1 {
     font-size:20px;
 }
-.contact p:last-of-type {
-    text-align: justify;
-    margin-left: 1.3rem;
-}
-.colored{
-  color: var(--bleu);
-  margin-right: 1rem;
-}
+
 aside ul {
     list-style-type: none;
 }
+
 aside li {
     margin-bottom: 10px;
 }
@@ -198,5 +200,4 @@ div h1:after {
     border-top: 2px solid var(--bleu);
     margin-top: 10px;
     font size: 10px;
-  
 }
