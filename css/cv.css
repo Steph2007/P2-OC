@@ -148,24 +148,20 @@ header h2:after {
     margin: 1.5rem 0;
   }
 
-  .date{
-    width:200px;
-  }
 
-  .done{
-    width: 528px;
-  }
 
 }
 
 .date{
   display:block;
   text-align: justify;
+  width: 200px;
 }
 
 .done{
   display:block;
   padding-left: 2rem;
+  width: 528px;
 }
 
 reco {
