@@ -164,13 +164,13 @@ header h2:after {
   width: 528px;
 }
 
+
 .reco {
-    display: flex;
-    justify-content: space-between;
+  display:flex;
+  justify-content:space-between
 }
 
 div h1 {
-    /* border-bottom: 2px solid var(--bleu); */
     font-size:20px;
 }
 .contact p:last-of-type {
