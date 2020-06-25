@@ -148,22 +148,22 @@ header h2:after {
     margin: 1.5rem 0;
   }
 
-  date{
+  .date{
     width:200px;
   }
 
-  done{
+  .done{
     width: 528px;
   }
 
 }
 
-date{
+.date{
   display:block;
   text-align: justify;
 }
 
-done{
+.done{
   display:block;
   padding-left: 2rem;
 }
