@@ -98,12 +98,12 @@ aside p {
 
 
 
-icones {
+.icones {
     display: flex;
     justify-content: space-around;
 }
 
-icones i {
+aside i {
     border: 1px solid;
     font-size: 1.5rem;
     /* padding: .5rem; */
@@ -164,7 +164,7 @@ header h2:after {
   width: 528px;
 }
 
-reco {
+.reco {
     display: flex;
     justify-content: space-between;
 }
